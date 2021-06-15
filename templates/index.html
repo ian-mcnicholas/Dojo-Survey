@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="Container">
+        <form action="/result" method="POST">
+            <div class="group">
+                <label for="name">Your Name:</label>
+                <input name="name" type="name" class="form-control" placeholder="Enter your name" />
+            </div>
+            <div class="group">
+                <label for="location">Dojo Location:</label>
+                <select class="form-select" aria-label="Default select example" name="location">
+                    <option selected>Select a location</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Southside">Southside</option>
+                    <option value="OtherPlaces">Other Places</option>
+                </select>
+            </div>
+            <div class="group">
+                <label for="language">Favorite Language:</label>
+                <select class="form-select" aria-label="Default select example" name="language">
+                    <option selected>Select a language</option>
+                    <option value="Python">Python</option>
+                    <option value="Swift">Swift</option>
+                    <option value="JavaScript">Javascript</option>
+                </select>
+            </div>
+            
+            
+            <div class="group">
+                <label for="comments">Comment (optional)</label>
+                <textarea name="comment" cols="100" rows="10"> </textarea>
+            </div>
+            <div class="button_div">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
